@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body{
+          background-image: url("Image/abstract-3304213_1280.webp");
+        }
+        .container {
+            font-family:fantasy;
+            padding: 30px;
+            border: 2px solid #ccc;
+            background-color: #f9f9f9;
+            box-shadow: 10px 10px rgb(128, 126, 126);
+            margin: auto 0;
+        }
+
+        #link1 {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+       
+        .container input {
+            padding: 13px 10px;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .container button {
+            padding: 14px 13px;
+            width: 100%;
+            margin: 15px 0;
+            background: none;
+            border: none;
+            background-color: rgb(13, 17, 13);
+            color: white;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        span {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        span:before,
+        span:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid #000;
+            margin: auto;
+        }
+
+        img {
+
+            width: 30px;
+            height: 30px;
+            margin-left: 80px;
+            margin-top: 10px;
+        }
+
+        #icon {
+            margin-left: 130px;
+        }
+
+    </style>
+</head>
+
+<body >
+
+    <form class="container" action="table.html">
+        Don't have an account? <a href="index.html" id="link1"> Sign up</a>
+        <h1>Sign in</h1>
+
+        <label for="email">Email:</label>
+        <br>
+        <input id="email" placeholder="Enter your email" type="email" required size="65" />
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input id="password" placeholder="Create strong password" type="password" required size="65" />
+        <br><br>
+        <input type="checkbox" id="agreement" required />
+        <label for="agreement">I've Read And Agree With <b>The Terms Of Service </b>And Our
+            <b>Privacy Policiy</b></label>
+        <br>
+        <button type="submit">Sign In</button>
+        <br><br>
+        <span>Or Sign In With</span>
+        <br>
+        <a id="icon"
+            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F%3Fauthuser%3D0&ec=GAlAmgQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S137806270%3A1740465927533623&ddm=1">
+          <img src="Image/google-brands.svg" alt="google" />
+        </a>
+
+        <a href="https://www.facebook.com/login.php/"><img src="Image/facebook-brands.svg" alt="facebook" /></a>
+
+    </form>
+
+
+</body>
+
+</html>
